@@ -18,6 +18,8 @@ public class P6 {
 
 			String url = "jdbc:mysql://localhost:3306/jdbc";
 			Connection con = DriverManager.getConnection(url, "root", "");
+			//
+			System.out.println("Hi");
 			
 			Statement st = con.createStatement();
 			st.executeUpdate("insert into table1 values(900)");
